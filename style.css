@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logout{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    height: 280px;
+    background-color: #df2935;
+    border-radius: 5px;
+}
+
+.botao{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+button{
+    padding: 8px 12px;
+    border: none;
+    border: 1px solid #e6e6e6;
+    color: #e6e6e6;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    right:calc(50% - 30px);
+    transform: translateY(-50%);
+    width: 50%;
+    height: 450px;
+    border-radius: 8px;
+    background-color: #fff;
+    -webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.76);
+    -moz-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.76);
+    box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.76);
+    transition: .3s ease-out;
+}
+
+.right{
+    right: 30px;
+}
+
+.box{
+    display: flex;
+}
+.cadastro-box,
+.login-box{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin: 60px ;
+
+}
+h2{
+    color: #e6e6e6;
+    font-size:25px;
+    margin-bottom: 15px;
+}
+p{
+    color: #e6e6e6;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+/* Formulario */
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 28px;
+}
+input{
+    width: 80%;
+    height: 38px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    padding-left: 10px;
+    margin: 0 auto;
+}
+h3{
+    font-size: 30px;
+    margin:35px 0 30px 26px;
+    color: #595959;
+}
+a{
+    text-decoration: none;
+    margin: 0 0 30px 26px;
+    color: #054a91;
+}
+.login-show , button{
+    margin-top: 15px;
+}
+.login-show{
+    display: none;
+    animation: show 1s forwards;
+}
+.register-show{
+    display: none;
+    animation: show 1s forwards;
+}
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translate3d(-30px, 0, 0);
+      }
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+}
+.ativo{
+    display: block;
+    
+}
+button[type="submit"]{
+    border: none;
+    width: 150px;
+    margin-left: 26px;
+    cursor: pointer;
+    background-color: #054a91;
+    color: #e6e6e6;
+    font-size: 14px;
+}
+
+label{
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    font-size: 17px;
+    color: #ccc;
+    background-color: #fff;
+    transform: translateY(-50%);
+    transition: .2s ease-in-out;
+}
+.efeito{
+    top: 0;
+    color: #054a91;
+    font-size: 14px;
+    background-color: #fff;
+    padding: 3px 5px;
+}
+
